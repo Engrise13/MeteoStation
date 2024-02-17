@@ -19,8 +19,8 @@ with open("src/database.txt", "r") as file:
     for line in file:
         values = line.strip().split()
         if values:
-            last_value = float(values[2]) # 0 - Temperature, 1 - Humidity, 2 - Heat Index
-            heat_index_list.append(last_value)
+            shown_value = float(values[2]) # 0 - Temperature, 1 - Humidity, 2 - Heat Index
+            heat_index_list.append(shown_value)
 
 readings_list = list(range(1, len(heat_index_list) + 1))
 
