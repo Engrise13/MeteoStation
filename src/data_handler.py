@@ -14,10 +14,9 @@ print("Initialization Successful")
 
 # Writing readings to DB
 while True:
-    data = bt_data.readline().decode().strip()
-    string_data_list = data.split()
+    data = bt_data.readline().decode().strip().split()
     float_data_list = []
-    for x in string_data_list:
+    for x in data:
         float_data_list.append(float(x))
         
     if all(math.isnan(val) for val in float_data_list):
