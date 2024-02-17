@@ -1,6 +1,7 @@
 # Libraries
 import datetime # Not used
 import sys # Used in ImportError 
+import math # Used to remove all NaN values
 
 try:
     import serial
@@ -19,6 +20,8 @@ while True:
     float_data_list = []
     for x in string_data_list:
         float_data_list.append(float(x))
+    if all(math.isnan(val) for val in float_data_list):
+        continue
     #time = datetime.datetime.now() # Not used
     #ftime = time.strftime("[%Y:%m:%d]-[%H:%M:%S]") # Not used
     with open("src/database.txt", "a") as db:
