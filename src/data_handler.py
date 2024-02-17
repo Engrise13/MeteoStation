@@ -24,8 +24,10 @@ while True:
             continue
         else:
             float_data_list.append(float(x))
-
-    with open("src/database.txt", "a") as db:
-        db.write(f"{float_data_list[0]} ") # Temperature
-        db.write(f"{float_data_list[1]} ") # Humidity
-        db.write(f"{float_data_list[2]}\n") # Compute Heat Index
+    try:
+        with open("src/database.txt", "a") as db:
+            db.write(f"{float_data_list[0]} ") # Temperature
+            db.write(f"{float_data_list[1]} ") # Humidity
+            db.write(f"{float_data_list[2]}\n") # Compute Heat Index
+    except IndexError:
+        continue
