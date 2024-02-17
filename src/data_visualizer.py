@@ -14,18 +14,18 @@ except ImportError:
     sys.exit()
 
 # Init
-y = []
+heat_index_list = []
 with open("src/database.txt", "r") as file:
     for line in file:
         values = line.strip().split()
         if values:
             last_value = float(values[2]) # 0 - Temperature, 1 - Humidity, 2 - Heat Index
-            y.append(last_value)
+            heat_index_list.append(last_value)
 
-x = list(range(1, len(y) + 1))
+readings_list = list(range(1, len(heat_index_list) + 1))
 
 # Plot creation
-plt.plot(np.array(x), np.array(y))
+plt.plot(np.array(readings_list), np.array(heat_index_list))
 plt.xlabel('Number of Readings')
 plt.ylabel('Compute Heat Index')
 plt.title('Compute Heat Index Graph')
