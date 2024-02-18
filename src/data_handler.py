@@ -4,16 +4,14 @@ import sys  # Used in ImportError, SerialException
 try:
     import serial
 except ImportError:
-    print('ERROR: Install "pyserial" library first!')
-    sys.exit()
+    sys.exit('ERROR: Install "pyserial" library first!')
 
 # Init
 try:
     bt_data = serial.Serial("/dev/rfcomm0", 9600)  # Bluetooth connection
     print("Initialization Successful")
 except serial.SerialException:
-    print("ERROR: Connect to HC05 via Bluetooth")
-    sys.exit()
+    sys.exit("ERROR: Connect to HC05 via Bluetooth")
 
 # Writing readings to DB
 while True:

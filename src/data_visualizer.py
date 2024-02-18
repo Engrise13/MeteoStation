@@ -4,14 +4,12 @@ import sys  # Used in ImportError
 try:
     import matplotlib.pyplot as plt
 except ImportError:
-    print('ERROR: Install "matplotlib" library first!')
-    sys.exit()
+    sys.exit('ERROR: Install "matplotlib" library first!')
 
 try:
     import numpy as np
 except ImportError:
-    print('ERROR: Install "numpy" library first!')
-    sys.exit()
+    sys.exit('ERROR: Install "numpy" library first!')
 
 # Init
 heat_index_list = []
