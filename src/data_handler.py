@@ -20,9 +20,7 @@ while True:
     data = bt_data.readline().decode().strip().split()
     float_data_list = []
     for x in data:
-        if x == "nan":
-            continue
-        else:
+        if x != "nan":
             float_data_list.append(float(x))
     try:
         with open("src/database.txt", "a") as db:
