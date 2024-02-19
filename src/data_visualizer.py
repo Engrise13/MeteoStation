@@ -13,8 +13,8 @@ except ImportError:
 
 # Init
 heat_index_list = []
-with open("src/database.txt", "r") as file:
-    for line in file:
+with open("src/database.txt", "r") as db:
+    for line in db:
         values = line.strip().split()
         if values:
             # 0 - Temperature, 1 - Humidity, 2 - Heat Index
