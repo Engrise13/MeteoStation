@@ -19,8 +19,8 @@ Simple `Arduino`-`Python` project utilizing `DHT-22` and `HC-05` modules to meas
 8) Enjoy and feel free to modify it!
 
 ## Future Plans
-- Code improvements
-- Real-time Graph & API
+- Code improvements :white_check_mark:
+- Real-time Graph & API 
 - MicroSD support
-- Notification system
+- Notification system (via Telegram)
 - Temperature Trends & Predictions
