@@ -18,6 +18,12 @@ Simple `Arduino`-`Python` project utilizing `DHT-22` and `HC-05` modules to meas
 7) Run `data_handler` to get readings, and `data_visualizer` to show the graph based on the readings you got
 8) Enjoy and feel free to modify it!
 
+## Working Principle Breakdown
+1) `DHT22` sensor gets temperature and humidity values
+2) These values are sent to your PC via `HC-05` bluetooth module
+3) They are handled and get added to a database by `data_handler`
+4) You can see the graph (that takes data from the database) via `data_visualizer`
+
 ## Future Plans
 - Code improvements :white_check_mark:
 - Real-time Graph & API 
