@@ -25,8 +25,8 @@ Simple `Arduino`-`Python` project utilizing `DHT-22` and `HC-05` modules to meas
 4) You can see the graph (that takes data from the database) via `data_visualizer`
 
 ## Future Plans
-- Code improvements :white_check_mark:
-- Real-time Graph & API 
-- MicroSD support
 - Notification system (via Telegram)
+- MicroSD support
 - Temperature Trends & Predictions
+- Real-time Graph & API 
+- Code improvements :white_check_mark:
