@@ -2,7 +2,7 @@
 import sys  # Used in ImportError, SerialException
 import argparse
 
-# Parse CLI arguments
+# CLI Parser
 parser = argparse.ArgumentParser()
 
 parser.add_argument(
@@ -22,12 +22,13 @@ parser.add_argument(
 
 args = parser.parse_args()
 
+# Serial Import
 try:
     import serial
 except ImportError:
     sys.exit('ERROR: Install "pyserial" library first!')
 
-# Init
+# Bluetooth Init
 try:
     bt_data = serial.Serial(args.rfcomm_device, args.baud_rate)  # Bluetooth connection
     print("Initialization Successful")
