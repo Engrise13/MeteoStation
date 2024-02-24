@@ -33,7 +33,7 @@ try:
     bt_data = serial.Serial(args.rfcomm_device, args.baud_rate)  # Bluetooth connection
     print("Initialization Successful")
 except serial.SerialException:
-    sys.exit("ERROR: Connect to HC05 via Bluetooth")
+    sys.exit("Error: Serial Exception - Check your BAUD rate, RFCOMM device, and your Bluetooth connection.")
 
 # Writing readings to DB
 while True:
