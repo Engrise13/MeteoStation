@@ -9,7 +9,7 @@ parser.add_argument(
     "-d",
     "--rfcomm-device",
     default="/dev/rfcomm0",
-    help="Choose different RFCOMM device for Bluetooth connection",
+    help="Choose different RFCOMM device for Bluetooth connection.",
 )
 
 parser.add_argument(
@@ -17,7 +17,7 @@ parser.add_argument(
     "--baud-rate",
     type=int,
     default=9600,
-    help="Change baud rate of connection",
+    help="Change BAUD rate of connection.",
 )
 
 args = parser.parse_args()
