@@ -33,7 +33,9 @@ try:
     bt_data = serial.Serial(args.rfcomm_device, args.baud_rate)  # Bluetooth connection
     print("Initialization Successful")
 except serial.SerialException:
-    sys.exit("Error: Serial Exception - Check your BAUD rate, RFCOMM device, and your Bluetooth connection.")
+    sys.exit(
+        "Error: Serial Exception - Check your BAUD rate, RFCOMM device, and your Bluetooth connection."
+    )
 
 # Writing readings to DB
 while True:
