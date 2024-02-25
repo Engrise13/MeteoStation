@@ -13,7 +13,7 @@ except ImportError:
 
 # Init
 heat_index_list = []
-with open("src/database.txt", "r") as db:
+with open("database.txt", "r") as db:
     for line in db:
         values = line.strip().split()
         if values:
