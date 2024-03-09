@@ -23,5 +23,5 @@ void loop() {
   bluetooth.print(" ");
   bluetooth.print(th);
   bluetooth.print("\n");
-  delay(1000);
+  delay(1000); // 1000 - 1 second
 }
