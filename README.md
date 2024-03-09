@@ -24,7 +24,7 @@ Simple `Arduino`-`Python` project utilizing `DHT-22` and `HC-05` modules to meas
 3) They are handled and get added to a database by `data_handler`
 4) You can see the graph (that takes data from the database) via `data_visualizer`
 
-## Future Plans
+## Future Plans (Sorted by Priority)
 - Notification system (via Telegram)
 - MicroSD support
 - Temperature Trends & Predictions
