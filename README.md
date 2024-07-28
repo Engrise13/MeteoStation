@@ -1,4 +1,4 @@
-# MeteoStation v1.0
+# MeteoStation
 Simple `Arduino`-`Python` project utilizing `DHT-22` and `HC-05` modules to measure and send **humidity**, **temperature**, and **Compute Heat Index** (with `DHT-22` module) via bluetooth (with `HC-05` module)
 
 ## Components Needed
